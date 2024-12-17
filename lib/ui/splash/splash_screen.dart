@@ -2,7 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:toki/ui/splash/auth/login.dart';
+import 'package:toki/ui/auth/login_or_register.dart';
+import 'package:toki/ui/auth/register.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -17,7 +18,7 @@ class _SplashState extends State<Splash> {
     super.initState();
     Timer(const Duration(seconds: 3), () {
       Navigator.push(context,
-          MaterialPageRoute(builder: (context) => const LoginScreen()));
+          MaterialPageRoute(builder: (context) => const LoginOrRegister()));
     });
   }
 
